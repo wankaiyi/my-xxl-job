@@ -1,6 +1,8 @@
 FROM openjdk:8-jdk-slim
 MAINTAINER wankaiyi
 
+COPY --from=hengyunabc/arthas:latest /opt/arthas /opt/arthas
+
 ENV PARAMS=""
 
 ENV TZ=PRC
